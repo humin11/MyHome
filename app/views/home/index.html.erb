@@ -1,4 +1,36 @@
 <h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
-<% end %>
+<div>
+  <textarea rows="3" style="width:98%"></textarea>
+</div>
+<hr class="bs-docs-separator">
+<section>
+  <div class="row-fluid post">
+    <div class="span2">
+      <a href="#">
+        <%= image_tag "user.png", :class => "thumbnail" %>
+      </a>
+    </div>
+    <div class="span10">
+      <div class="bs-docs-example">
+        <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+      </div>
+      <pre class="prettyprint">&lt;p class="lead"&gt;...&lt;/p&gt;</pre>
+    </div>
+  </div>
+</section>
+<hr class="bs-docs-separator">
+<section>
+  <div class="row-fluid post">
+    <div class="span2">
+      <a href="#">
+        <%= image_tag "user.png", :class => "thumbnail" %>
+      </a>
+    </div>
+    <div class="span10">
+      <div class="bs-docs-example">
+        <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+      </div>
+      <pre class="prettyprint">&lt;p class="lead"&gt;...&lt;/p&gt;</pre>
+    </div>
+  </div>
+</section>

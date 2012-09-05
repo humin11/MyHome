@@ -21,18 +21,20 @@
     </header>
     <div id="main" role="main">
       <div class="container">
-        <div class="content">
-           <div class="row-fluid">
-            <div class="span12">
-              <%= render 'layouts/messages' %>
-              <%= yield %>
-            </div>
+        <div class="row-fluid">
+          <div class="span9 content">
+            <%= render 'layouts/messages' %>
+            <%= yield %>
           </div>
-          <footer>
-            <%= render 'layouts/footer' %>
-          </footer>
+          <div class="content span3">
+            <span>test</span>
+            <%= yield(:sidebar) %>
+          </div>
         </div>
+        <footer>
+          <%= render 'layouts/footer' %>
+        </footer>
       </div> <!--! end of .container -->
     </div> <!--! end of #main -->
-  </body>
-</html>
+    </body>
+    </html>

@@ -16,6 +16,10 @@ gem "devise", ">= 2.1.2"
 gem "devise_invitable", ">= 1.0.3"
 gem "cancan", ">= 1.6.8"
 gem "rolify", ">= 3.2.0"
+
+gem "carrierwave"
+gem "mini_magick"
+
 gem "simple_form", ">= 2.0.2"
 gem "therubyracer", ">= 0.10.2", :group => :assets, :platform => :ruby
 gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
