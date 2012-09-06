@@ -1,4 +1,8 @@
-<h3>Home</h3>
+<div>
+  <ul class="breadcrumb">
+    <li><a href="#">Home</a> </li>
+  </ul>
+</div>
 <div>
   <textarea rows="3" style="width:98%"></textarea>
 </div>
@@ -7,11 +11,47 @@
   <div class="row-fluid post">
     <div class="span2">
       <a href="#">
-        <%= image_tag "user.png", :class => "thumbnail" %>
+        <%= image_tag "user.png", :class => "img-rounded" %>
       </a>
     </div>
     <div class="span10">
-      <div class="bs-docs-example">
+      <div class="bubble">
+        <div class="title">
+          <p><a href="#"><strong>humin</strong></a> posted at <%= Time.new %></p>
+        </div>
+        <img src="http://www.hongname.com/mxtp/dongwu/good/gou8/1600DOG008.jpg" />
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+      </div>
+      <pre class="prettyprint">&lt;p class="lead"&gt;...&lt;/p&gt;</pre>
+    </div>
+  </div>
+</section>
+<hr class="bs-docs-separator">
+<section>
+  <div class="row-fluid post">
+    <div class="span2">
+      <a href="#">
+        <%= image_tag "user.png", :class => "img-circle center" %>
+      </a>
+    </div>
+    <div class="span10">
+      <div class="bubble">
+        <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+      </div>
+      <pre class="prettyprint">&lt;p class="lead"&gt;...&lt;/p&gt;</pre>
+    </div>
+  </div>
+</section>
+<hr class="bs-docs-separator">
+<section>
+  <div class="row-fluid post">
+    <div class="span2">
+      <a href="#">
+        <%= image_tag "user.png", :class => "img-polaroid" %>
+      </a>
+    </div>
+    <div class="span10">
+      <div class="bubble">
         <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
       </div>
       <pre class="prettyprint">&lt;p class="lead"&gt;...&lt;/p&gt;</pre>
@@ -27,10 +67,53 @@
       </a>
     </div>
     <div class="span10">
-      <div class="bs-docs-example">
+      <div class="bubble">
+        <img src="http://www.hongname.com/mxtp/dongwu/good/gou10/1024x768_046.jpg" />
         <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
       </div>
       <pre class="prettyprint">&lt;p class="lead"&gt;...&lt;/p&gt;</pre>
     </div>
   </div>
 </section>
+<hr class="bs-docs-separator">
+<div class="pagination pagination-centered">
+  <ul>
+    <li class="disabled"><a href="#">&laquo;</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&raquo;</a></li>
+  </ul>
+</div>
+
+<%= content_for :sidebar do %>
+  <div class="app">
+    <button class="btn btn-large btn-block btn-primary" type="button">Upload Some Pictures</button>
+  </div>
+  <div class="content">
+    <div class="title">
+      <legend>What's hot</legend>
+      <div class="bs-docs-example">
+        <ul class="nav nav-tabs nav-stacked">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="title">
+      <legend>Wallpaper</legend>
+      <div class="bs-docs-example">
+        <ul class="nav nav-tabs nav-stacked">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<% end %>

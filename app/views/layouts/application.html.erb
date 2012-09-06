@@ -22,12 +22,11 @@
     <div id="main" role="main">
       <div class="container">
         <div class="row-fluid">
-          <div class="span9 content">
+          <div class="span8 content">
             <%= render 'layouts/messages' %>
             <%= yield %>
           </div>
-          <div class="content span3">
-            <span>test</span>
+          <div class="span4">
             <%= yield(:sidebar) %>
           </div>
         </div>
